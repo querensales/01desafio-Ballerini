@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  border: solid salmon;
+}
+
+.dados {
+  width: 600px;
+}
+
+.resultados {
+  width: 600px;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px;
+}
