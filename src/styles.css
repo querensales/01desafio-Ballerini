@@ -1,3 +1,9 @@
 @import '~primeicons/primeicons.css';
 @import '../node_modules/primeng/resources/themes/bootstrap4-dark-purple/theme.css';
 @import '~primeng/resources/primeng.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+html {
+  background: #2F2325;
+  font-family: 'Concert One', cursive;
+}

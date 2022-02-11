@@ -1,18 +1,44 @@
 .container {
   display: flex;
-  border: solid salmon;
+  border-radius: 20px;
+  border: 2px solid #FFF2E7;
+  background: #483636;
+
+}
+
+h2 {
+  color: #FFF2E7;
+  align-items: center;
 }
 
 .dados {
   width: 600px;
+  align-items: center;
 }
 
-.resultados {
-  width: 600px;
+label {
+  color: #FFF2E7;
 }
 
 input {
+  background: #FFF2E7;
   display: block;
   padding: 5px;
   margin-bottom: 5px;
+  width: 361px;
+  height: 50px;
+  background: rgba(255, 242, 231, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-size: 25px;
+  font-family: 'Concert One', cursive;
+}
+
+input:focus {
+  outline: none;
+}
+
+.linha-vertical {
+  height: 430px;
+  border-left: 3px solid #FFF2E7;
 }
