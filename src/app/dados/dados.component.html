@@ -1,45 +1,32 @@
 <div class="container">
   <div class="dados">
-    <h2>DIGITE OS DADOS DO USUARIO</h2>
+    <h2>DIGITE OS DADOS DO USUARIO:</h2>
 
-    <label for="nome">Nome</label>
-    <input name="nome" type="text">
+    <input name="nome" type="text" placeholder="Nome" [(ngModel)]="usuario.nome">
 
-    <label for="idade">Idade</label>
-    <input name=" idade" type="number">
+    <input name=" idade" type="number" [(ngModel)]="usuario.idade">
 
-    <label for="skills">Skills</label>
-    <input name="skills" type="text">
+    <input name="skills" type="text" placeholder="Skills" [(ngModel)]="usuario.skills">
 
-    <button>Cadastrar usuario</button>
+    <button (click)="criarUsuario()">Cadastrar usuario</button>
   </div>
 
   <div class="linha-vertical"></div>
 
   <div class="resultados">
-    <h2>RESULTADOS</h2>
+    <h2>RESULTADOS:</h2>
     <ul>
-      <li>
-        Nome: Kleber
-        Idade: 33
-        Skills: Porra nenhuma
-
-      </li>
-      <li>
-        Nome: Kleber 2
-        Idade: 33
-        Skills: Porra nenhuma
-
-      </li>
-
-      <li>
-        Nome: Kleber 3
-        Idade: 33
-        Skills: Porra nenhuma
-
-
+      <li *ngFor="let item of caixinhaDeUsuario">
+        Nome: <span>{{item.nome}}</span><br>
+        Idade: <span> {{item.idade}}</span><br>
+        Skills: <span>{{item.skills}}</span><br>
+        <hr>
       </li>
     </ul>
 
   </div>
 </div>
+
+<p-dialog header="Header" [(visible)]="exibirMensagem" [style]="{width: '50vw'}">
+  <p>Preencha todos os campos antes de prosseguir.</p>
+</p-dialog>

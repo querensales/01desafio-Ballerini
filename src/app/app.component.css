@@ -1,5 +1,14 @@
 .cabecalho {
-  color: #ffffff;
+  color: #EFC764;
   font-size: 100px;
   line-height: 78px;
+  margin-left: 25px;
+}
+
+hr {
+  margin-bottom: 90px;
+}
+
+span {
+  color: #B3DFD3;
 }
